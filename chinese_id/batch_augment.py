@@ -179,7 +179,7 @@ def batch_augment_images(input_dir, output_dir, num_augmentations=3, max_users=3
 if __name__ == "__main__":
     # 设置输入和输出目录
     input_directory = "chinese_ids"  # 身份证图片根目录
-    output_directory = "chinese_ids_augmented"  # 增强后的图片根目录
+    output_directory = "e:/dataset/generated/chinese_ids_augmented"  # 增强后的图片根目录
     
     # 检查输入目录
     if not os.path.exists(input_directory):
@@ -188,7 +188,7 @@ if __name__ == "__main__":
         exit(1)
     
     # 执行批量增强（限制处理前3个用户进行测试）
-    batch_augment_images(input_directory, output_directory, num_augmentations=3, max_users=3)
+    batch_augment_images(input_directory, output_directory, num_augmentations=3, max_users=200)
     
     print(f"\n🔍 使用建议:")
     print("1. 增强后的图片按姓名分类存储，便于查找")
