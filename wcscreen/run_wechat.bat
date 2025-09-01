@@ -1,0 +1,9 @@
+@echo off
+echo 正在激活 wechat-classifier 环境...
+call "C:\ProgramData\miniconda3\Scripts\activate.bat" wechat-classifier
+
+echo 正在运行微信截图生成脚本...
+python genwechat.py
+
+echo 按任意键退出...
+pause >nul
